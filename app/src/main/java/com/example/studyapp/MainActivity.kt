@@ -121,5 +121,7 @@ class MainActivity : AppCompatActivity() {
     private fun whileExamples() {
         loopWhile.whileControl()
         loopWhile.doWhileControl()
+        loopWhile.pizzaSlices()
+        loopWhile.doPizzaSlices()
     }
 }

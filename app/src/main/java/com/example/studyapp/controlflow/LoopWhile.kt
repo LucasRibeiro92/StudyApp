@@ -22,4 +22,20 @@ class LoopWhile {
             cakesBaked++
         } while (cakesBaked < 3)
     }
+
+    fun pizzaSlices() {
+        var sliceOfPizza = 0
+        while (sliceOfPizza < 9) {
+            Log.d("STUDY_PIZZA_EXERCISE", "Right here, we have $sliceOfPizza pizza slices")
+            sliceOfPizza++
+        }
+    }
+
+    fun doPizzaSlices() {
+        var sliceOfPizza = 0
+        do {
+            Log.d("STUDY_DO_PIZZA_EXERCISE", "Right here, we have $sliceOfPizza pizza slices")
+            sliceOfPizza++
+        } while (sliceOfPizza < 9)
+    }
 }
