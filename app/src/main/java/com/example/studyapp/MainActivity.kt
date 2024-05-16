@@ -14,6 +14,7 @@ import com.example.studyapp.databinding.ActivityMainBinding
 import com.example.studyapp.datastructure.DataTypeList
 import com.example.studyapp.datastructure.DataTypeMap
 import com.example.studyapp.datastructure.DataTypeSet
+import com.example.studyapp.functions.LambdaExpressions
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var conditionalWhen: ConditionalWhen
     private lateinit var loopFor: LoopFor
     private lateinit var loopWhile: LoopWhile
+    private lateinit var lambdaExpressions: LambdaExpressions
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,7 +49,8 @@ class MainActivity : AppCompatActivity() {
         //ifExamples()
         //whenExamples()
         //forExamples()
-        whileExamples()
+        //whileExamples()
+        lambdaExamples()
     }
 
     private fun setupBinding() {
@@ -73,6 +76,8 @@ class MainActivity : AppCompatActivity() {
         loopFor = LoopFor()
         //While
         loopWhile = LoopWhile()
+        //Lambda
+        lambdaExpressions = LambdaExpressions()
     }
 
     /*
@@ -123,5 +128,11 @@ class MainActivity : AppCompatActivity() {
         loopWhile.doWhileControl()
         loopWhile.pizzaSlices()
         loopWhile.doPizzaSlices()
+    }
+    //LAMBDA EXAMPLES
+    private fun lambdaExamples() {
+        lambdaExpressions.lambdaUppercase()
+        lambdaExpressions.lambdaFilter()
+        lambdaExpressions.lambdaMap()
     }
 }
