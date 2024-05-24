@@ -14,6 +14,7 @@ import com.example.studyapp.databinding.ActivityMainBinding
 import com.example.studyapp.datastructure.DataTypeList
 import com.example.studyapp.datastructure.DataTypeMap
 import com.example.studyapp.datastructure.DataTypeSet
+import com.example.studyapp.functions.FunctionBase
 import com.example.studyapp.functions.LambdaExpressions
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var conditionalWhen: ConditionalWhen
     private lateinit var loopFor: LoopFor
     private lateinit var loopWhile: LoopWhile
+    private lateinit var functionBase: FunctionBase
     private lateinit var lambdaExpressions: LambdaExpressions
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +52,8 @@ class MainActivity : AppCompatActivity() {
         //whenExamples()
         //forExamples()
         //whileExamples()
-        lambdaExamples()
+        functionExamples()
+        //lambdaExamples()
     }
 
     private fun setupBinding() {
@@ -76,6 +79,8 @@ class MainActivity : AppCompatActivity() {
         loopFor = LoopFor()
         //While
         loopWhile = LoopWhile()
+        //Function
+        functionBase = FunctionBase()
         //Lambda
         lambdaExpressions = LambdaExpressions()
     }
@@ -128,6 +133,11 @@ class MainActivity : AppCompatActivity() {
         loopWhile.doWhileControl()
         loopWhile.pizzaSlices()
         loopWhile.doPizzaSlices()
+    }
+    //FUNCTION EXAMPLES
+    private fun functionExamples() {
+        functionBase.defaultValueParameter("TESTE 1")
+        functionBase.defaultValueParameter("TESTE 2", "MY INFO")
     }
     //LAMBDA EXAMPLES
     private fun lambdaExamples() {
